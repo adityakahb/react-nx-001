@@ -1,0 +1,11 @@
+html {
+  font-size: 16px;
+}
+body {
+  background-color: $gray-300;
+}
+.max-wrap {
+  margin: 0 auto;
+  max-width: rem(1920px);
+  width: 100%;
+}
