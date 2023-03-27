@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "watch-sass": "node-sass src/styles/globals.scss public/styles/globals.css --watch",
+    "livereload": "live-reload --port 3000 ./src/**/*",
+    "sass:watch": "node-sass src/styles/globals.scss public/styles/globals.css --watch --source-map true",
+    "sass:reload": "npm run sass:watch && npm run livereload",
     "compress-css": "node-sass src/styles/globals.scss public/styles/globals.min.css --output-style compressed"
   },
   "dependencies": {
