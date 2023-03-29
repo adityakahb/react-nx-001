@@ -7,9 +7,9 @@ export default function SiteHeader({ children }) {
             <div className="row">
               <div className="col">
                 <div className="siteheader-logo d-flex">
-                  <a href="#" className="d-block">
+                  <a href="#" className="d-block my-2">
                     <img
-                      src="./images/logo-white.svg"
+                      src="./images/logo-black.svg"
                       className="w-100"
                       alt=""
                     />

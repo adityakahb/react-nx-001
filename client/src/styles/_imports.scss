@@ -37,12 +37,14 @@ $container-max-widths: (
   xxl: rem(1600px)
 );
 
-$grid-gutter-width:           rem(16px);
+$grid-gutter-width:           rem(32px);
 $grid-row-columns:            6;
-
 
 $font-family-sans-serif: 'Barlow', sans-serif;
 
+$font-size-base: 1rem;
+$lead-font-size: $font-size-base * 1.5;
+$lead-font-weight: 500;
 
 $spacer: rem(16px);
 $spacers: (
@@ -50,9 +52,9 @@ $spacers: (
   1: ($spacer * .25),
   2: ($spacer * .5),
   3: $spacer,
-  4: ($spacer * 1.5),
-  5: ($spacer * 3),
-  6: ($spacer * 3.25),
+  4: ($spacer * 2),
+  5: ($spacer * 2.5),
+  6: ($spacer * 3),
   7: ($spacer * 3.5),
   8: ($spacer * 4),
   9: ($spacer * 4.5),
