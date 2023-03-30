@@ -61,6 +61,12 @@ $spacers: (
   10: ($spacer * 5)
 );
 
+$border-radius: rem(8px);
+$border-radius-sm: rem(16px);
+$border-radius-lg: rem(24px);
+$border-radius-xl: rem(32px);
+$border-radius-xxl: rem(40px);
+
 @import './../../node_modules/bootstrap/scss/functions';
 @import './../../node_modules/bootstrap/scss/variables';
 @import './../../node_modules/bootstrap/scss/mixins';

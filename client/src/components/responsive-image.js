@@ -10,43 +10,59 @@ export default function ResponsiveImage({
   className
 }) {
   const colors = placeholdColors();
-  const replacePlaceholdUrl = () => {};
+  const replacePlaceholdUrl = (breakpoint, needsSingleImage) => {
+    var imgPath = srcsetGenerator(breakpoint, needsSingleImage);
+    if (imgPath.includes('place-hold.it')) {
+      imgPath = imgPath
+        .replaceAll('xxxxxx', colors.text)
+        .replaceAll('yyyyyy', colors.backgroundColor);
+    }
+    return imgPath;
+  };
   return (
     <>
       <picture>
         {_xxl && (_xxl['1x'] || _xxl['2x']) ? (
-          <source media="(min-width: 102em)" srcSet={srcsetGenerator(_xxl)} />
+          <source
+            media="(min-width: 102em)"
+            srcSet={replacePlaceholdUrl(_xxl)}
+          />
         ) : (
           <></>
         )}
         {_xl && (_xl['1x'] || _xl['2x']) ? (
-          <source media="(min-width: 73.25em)" srcSet={srcsetGenerator(_xl)} />
+          <source
+            media="(min-width: 73.25em)"
+            srcSet={replacePlaceholdUrl(_xl)}
+          />
         ) : (
           <></>
         )}
         {_lg && (_lg['1x'] || _lg['2x']) ? (
-          <source media="(max-width: 62em)" srcSet={srcsetGenerator(_lg)} />
+          <source media="(min-width: 62em)" srcSet={replacePlaceholdUrl(_lg)} />
         ) : (
           <></>
         )}
         {_md && (_md['1x'] || _md['2x']) ? (
-          <source media="(max-width: 46.375em)" srcSet={srcsetGenerator(_md)} />
+          <source
+            media="(min-width: 46.375em)"
+            srcSet={replacePlaceholdUrl(_md)}
+          />
         ) : (
           <></>
         )}
         {_sm && (_sm['1x'] || _sm['2x']) ? (
-          <source media="(max-width: 35.75em)" srcSet={srcsetGenerator(_sm)} />
-        ) : (
-          <></>
-        )}
-        {_default && (_default['1x'] || _default['2x']) ? (
-          <source media="(max-width: 0)" srcSet={srcsetGenerator(_default)} />
+          <source
+            media="(min-width: 35.75em)"
+            srcSet={replacePlaceholdUrl(_sm)}
+          />
         ) : (
           <></>
         )}
         <img
           className={className}
-          src={srcsetGenerator(_default, true)}
+          src={replacePlaceholdUrl(_default, true)}
+          srcSet={replacePlaceholdUrl(_default)}
           alt={`${alt}`}
         />
       </picture>

@@ -53,10 +53,10 @@ export default function Home() {
             <div className="max-wrap">
               <div className="container">
                 <div className="row">
-                  <div className="col-12 col-md-2 col-xl-3">
+                  <div className="col-12 col-md-6 col-xl-3">
                     <div className="card">
                       <ResponsiveImage
-                        className="w-100 h-100 object-fit-cover"
+                        className="w-100 h-100 object-fit-cover rounded"
                         _default={{
                           '1x': 'https://place-hold.it/300/xxxxxx/yyyyyy.png&fontsize=32',
                           '2x': 'https://place-hold.it/600/xxxxxx/yyyyyy.png&fontsize=32'
@@ -98,10 +98,10 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-12 col-md-2 col-xl-3">
+                  <div className="col-12 col-md-6 col-xl-3">
                     <div className="card">
                       <ResponsiveImage
-                        className="w-100 h-100 object-fit-cover"
+                        className="w-100 h-100 object-fit-cover rounded"
                         _default={{
                           '1x': 'https://place-hold.it/300/xxxxxx/yyyyyy.png&fontsize=32',
                           '2x': 'https://place-hold.it/600/xxxxxx/yyyyyy.png&fontsize=32'
@@ -143,10 +143,10 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-12 col-md-2 col-xl-3">
+                  <div className="col-12 col-md-6 col-xl-3">
                     <div className="card">
                       <ResponsiveImage
-                        className="w-100 h-100 object-fit-cover"
+                        className="w-100 h-100 object-fit-cover rounded"
                         _default={{
                           '1x': 'https://place-hold.it/300/xxxxxx/yyyyyy.png&fontsize=32',
                           '2x': 'https://place-hold.it/600/xxxxxx/yyyyyy.png&fontsize=32'
@@ -188,10 +188,10 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-12 col-md-2 col-xl-3">
+                  <div className="col-12 col-md-6 col-xl-3">
                     <div className="card">
                       <ResponsiveImage
-                        className="w-100 h-100 object-fit-cover"
+                        className="w-100 h-100 object-fit-cover rounded"
                         _default={{
                           '1x': 'https://place-hold.it/300/xxxxxx/yyyyyy.png&fontsize=32',
                           '2x': 'https://place-hold.it/600/xxxxxx/yyyyyy.png&fontsize=32'

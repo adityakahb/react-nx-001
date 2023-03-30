@@ -15,7 +15,7 @@ export const srcsetGenerator = (breakpoint, needsSingleImage) => {
   let str1x = '';
   let str2x = '';
   if (breakpoint['1x']) {
-    str1x = breakpoint['1x'] + ' 1x';
+    str1x = breakpoint['1x'];
   }
   if (breakpoint['2x']) {
     str2x = breakpoint['2x'] + ' 2x';
