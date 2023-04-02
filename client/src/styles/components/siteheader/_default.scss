@@ -1,8 +1,31 @@
 .siteheader {
-  backdrop-filter: blur(rem(8px));
+  height: 40px;
   &-logo {
+    margin: 5px;
     a {
-      width: rem(60px);
+      height: 30px;
+      width: 30px;
+    }
+  }
+  &-notif {
+    font-size: 0;
+    font-style: normal;
+    height: rem(12px);
+    width: rem(12px);
+    font-weight: bold;
+  }
+  &-menu-toggle, &-search-toggle, &-notif-toggle {
+    > .btn {
+      padding: 6px;
+    }
+  }
+  &-user {
+    > .btn {
+      padding: 2px;
+      > div {
+        height: rem(32px);
+        width: rem(32px);
+      }
     }
   }
 }
