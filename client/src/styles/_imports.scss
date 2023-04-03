@@ -40,7 +40,7 @@ $container-max-widths: (
 $grid-gutter-width:           rem(32px);
 $grid-row-columns:            6;
 
-$font-family-sans-serif: 'Kanit', sans-serif;
+$font-family-sans-serif: 'Alegreya Sans', sans-serif;
 
 $font-size-base: 1rem;
 $lead-font-size: $font-size-base * 1.5;
@@ -63,11 +63,11 @@ $spacers: (
 
 $border-width: 2px;
 
-$border-radius: rem(8px);
-$border-radius-sm: rem(16px);
-$border-radius-lg: rem(24px);
-$border-radius-xl: rem(32px);
-$border-radius-xxl: rem(40px);
+$border-radius: 8px;
+$border-radius-sm: 16px;
+$border-radius-lg: 24px;
+$border-radius-xl: 32px;
+$border-radius-xxl: 40px;
 
 @import './../../node_modules/bootstrap/scss/functions';
 @import './../../node_modules/bootstrap/scss/variables';

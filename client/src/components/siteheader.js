@@ -1,12 +1,12 @@
 import ResponsiveImage from './responsive-image';
-export default function SiteHeader() {
+export default function Siteheader() {
   return (
     <>
-      <section className="siteheader backdrop-blur bg-white bg-opacity-75">
+      <section className="siteheader backdrop-blur bg-white bg-opacity-75 fixed-top">
         <header>
           <div className="container-fluid">
-            <div className="row">
-              <div className="col p-0 d-flex align-items-center flex-row-reverse justify-content-end">
+            <div className="row g-0">
+              <div className="col d-flex align-items-center flex-row-reverse justify-content-end">
                 <div className="siteheader-logo d-flex">
                   <a href="#" className="d-block">
                     <img
@@ -16,13 +16,13 @@ export default function SiteHeader() {
                     />
                   </a>
                 </div>
-                <div className="siteheader-menu-toggle d-flex">
+                <div className="siteheader-menu-toggle d-flex d-xxl-none">
                   <button type="button" className="btn">
-                    <span class="material-symbols-outlined">menu</span>
+                    <span className="material-symbols-outlined">menu</span>
                   </button>
                 </div>
               </div>
-              <div className="col p-0 d-flex justify-content-end">
+              <div className="col d-flex justify-content-end">
                 <div className="siteheader-search-toggle d-flex">
                   <button type="button" className="btn">
                     <span className="material-symbols-outlined">search</span>
@@ -32,13 +32,13 @@ export default function SiteHeader() {
                   <button type="button" className="btn position-relative">
                     <span className="material-symbols-outlined">
                       notifications
-                      <em className="siteheader-notif bg-danger rounded-circle position-absolute color-white">
-                        99+
-                      </em>
+                    </span>
+                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                      <span class="visually-hidden">New alerts</span>
                     </span>
                   </button>
                 </div>
-                <div className="siteheader-user d-flex ms-3">
+                <div className="siteheader-user d-flex">
                   <button
                     type="button"
                     className="btn d-flex justify-content-center align-items-center"

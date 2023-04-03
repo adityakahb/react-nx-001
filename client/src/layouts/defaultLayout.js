@@ -23,10 +23,20 @@ export default function DefaultLayout({ children }) {
 
         <link href="./styles/globals.css" rel="stylesheet" />
       </Head>
-      <SiteHeader />
-      <SiteNav />
-      <>{children}</>
-      <SiteFooter />
+      <div className="layout_m">
+        <div className="layout_m-header">
+          <SiteHeader />
+        </div>
+        <div className="layout_m-nav">
+          <SiteNav />
+        </div>
+        <div className="layout_m-main">
+          <>{children}</>
+        </div>
+        <div className="layout_m-footer">
+          <SiteFooter />
+        </div>
+      </div>
     </>
   );
 }

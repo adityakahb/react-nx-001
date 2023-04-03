@@ -1,0 +1,7 @@
+.layout_m {
+  display: flex;
+  flex-wrap: wrap;
+  &-header, &-nav, &-main, &-footer {
+    width: 100%;
+  }
+}

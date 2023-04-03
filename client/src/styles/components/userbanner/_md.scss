@@ -1,5 +1,10 @@
 .userbanner {
-  &-img-wrap {
-    height: rem(320px);
+  .card-body {
+    .img-thumbnail {
+      width: rem(200px);
+    }
+  }
+  &-text-wrap {
+    padding-top: rem(110px);
   }
 }

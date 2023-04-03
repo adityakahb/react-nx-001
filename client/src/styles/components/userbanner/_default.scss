@@ -2,4 +2,15 @@
   &-img-wrap {
     height: rem(240px);
   }
+  .card-body {
+    .img-thumbnail {
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, -50%);
+      width: rem(100px);
+    }
+  }
+  &-text-wrap {
+    padding-top: rem(55px);
+  }
 }

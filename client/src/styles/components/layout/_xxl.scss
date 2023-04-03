@@ -1,0 +1,9 @@
+.layout_m {
+  &-nav {
+    width: 240px;
+  }
+  &-main {
+    width: auto;
+    flex: 1;
+  }
+}

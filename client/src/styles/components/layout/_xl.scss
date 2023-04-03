@@ -1,5 +1,9 @@
-.layout-structure {
-  .layout-left {
-    width: 200px;
+.layout_m {
+  &-nav {
+    width: 80px;
+  }
+  &-main {
+    width: auto;
+    flex: 1;
   }
 }

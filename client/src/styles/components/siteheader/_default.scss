@@ -1,10 +1,10 @@
 .siteheader {
-  height: 40px;
+  height: 64px;
+  padding: 10px 0;
   &-logo {
-    margin: 5px;
     a {
-      height: 30px;
-      width: 30px;
+      height: 44px;
+      width: 44px;
     }
   }
   &-notif {
@@ -16,12 +16,16 @@
   }
   &-menu-toggle, &-search-toggle, &-notif-toggle {
     > .btn {
-      padding: 6px;
+      height: 44px;
+      padding: 8px;
+      width: 44px;
     }
   }
   &-user {
     > .btn {
       padding: 2px;
+      height: 44px;
+      width: 44px;
       > div {
         height: rem(32px);
         width: rem(32px);
