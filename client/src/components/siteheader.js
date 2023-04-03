@@ -18,7 +18,7 @@ export default function SiteHeader() {
                 </div>
                 <div className="siteheader-menu-toggle d-flex">
                   <button type="button" className="btn">
-                    <span class="material-symbols-outlined">menu</span>
+                    <span className="material-symbols-outlined">menu</span>
                   </button>
                 </div>
               </div>
