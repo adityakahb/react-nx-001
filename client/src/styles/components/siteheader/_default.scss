@@ -21,6 +21,24 @@
       width: 44px;
     }
   }
+  &-menu-toggle {
+    > .btn {
+      .is-nav-closed {
+        display: inline-block;
+      }
+      .is-nav-opened {
+        display: none;
+      }
+      &.sitenav-opened {
+        .is-nav-closed {
+          display: none;
+        }
+        .is-nav-opened {
+          display: inline-block;
+        }
+      }   
+    }
+  }
   &-user {
     > .btn {
       padding: 2px;

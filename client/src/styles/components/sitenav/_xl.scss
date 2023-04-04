@@ -1,4 +1,36 @@
 .sitenav {
-  transform: translateX(0);
-  width: 240px;
+  height: calc(100% - 64px);
+  left: 0;
+  top: 64px;
+  transform: translateX(-200px);
+  transition-delay: 0;
+  transition: all 250ms ease;
+  width: 276px;
+  li a {
+    flex-direction: row-reverse;
+  }
+  &-link-text {
+    display: inline-block;
+    opacity: 0;
+    transition: all 250ms ease;
+    transition-delay: 0;
+    visibility: hidden;
+    width: 170px;
+  }
+  &-opened {
+    transform: translateX(0);
+    li a {
+      flex-direction: row;
+    }
+    .sitenav-link-text {
+      opacity: 1;
+      transition-delay: 125ms;
+      visibility: visible;
+    }
+  }
+  &-opened &-header {
+    > .btn {
+      display: inline-block;
+    }
+  }
 }

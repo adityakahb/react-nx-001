@@ -3,11 +3,12 @@
   height: 100%;
   position: fixed;
   transform: translateX(-100%);
+  transition: all 250ms ease;
   width: 100%;
   z-index: 8882;
   top: 0;
   left: 0;
-  a > span {
+  a > .sitenav-link-icon {
     width: 44px;
     height: 44px;
   }
@@ -20,6 +21,14 @@
       height: 44px;
       width: 44px;
       padding: 8px;
+    }
+  }
+  &-opened {
+    transform: translateX(0);
+  }
+  &-opened &-header {
+    > .btn {
+      display: inline-block;
     }
   }
 }

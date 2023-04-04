@@ -1,5 +1,14 @@
+import { NavigationData } from './../contexts/nav-context';
+import { useContext } from 'react';
 import ResponsiveImage from './responsive-image';
+
 export default function Siteheader() {
+  const { isOpen, setIsOpen } = useContext(NavigationData);
+
+  const toggleNavigation = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <section className="siteheader bg-accent4 backdrop-blur bg-opacity-75 fixed-top">
@@ -17,8 +26,21 @@ export default function Siteheader() {
                   </a>
                 </div>
                 <div className="siteheader-menu-toggle d-flex d-xxl-none">
-                  <button type="button" className="btn">
-                    <span className="material-symbols-outlined">menu</span>
+                  <button
+                    type="button"
+                    className={
+                      (isOpen === true ? 'sitenav-opened ' : '') + 'btn'
+                    }
+                    onClick={() => {
+                      toggleNavigation();
+                    }}
+                  >
+                    <span className="material-symbols-outlined is-nav-closed">
+                      menu
+                    </span>
+                    <span className="material-symbols-outlined is-nav-opened">
+                      close
+                    </span>
                   </button>
                 </div>
               </div>

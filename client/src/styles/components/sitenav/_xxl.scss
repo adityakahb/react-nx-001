@@ -5,4 +5,28 @@
   position: static;
   transform: translateX(0);
   z-index: 8882;
+  li a {
+    flex-direction: row;
+  }
+  &-link-text {
+    opacity: 1;
+    visibility: visible;
+    width: 170px;
+  }
+  &-opened {
+    transform: translateX(0);
+    li a {
+      flex-direction: row;
+    }
+    .sitenav-link-text {
+      opacity: 1;
+      transition-delay: 125ms;
+      visibility: visible;
+    }
+  }
+  &-opened &-header {
+    > .btn {
+      display: inline-block;
+    }
+  }
 }
