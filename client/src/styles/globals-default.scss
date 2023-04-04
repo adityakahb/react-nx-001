@@ -1,0 +1,40 @@
+@import './imports';
+
+$primary: #25476a;
+$secondary: #574476;
+$info: #03a9f4;
+$success: #00d25b;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #e9ecef;
+$dark: #344767;
+$accent1: #191c24;
+$accent2: #af1763;
+$accent3: #fa9f1b;
+$accent4: #f4f5f7;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "accent1":    $accent1,
+  "accent2":    $accent2,
+  "accent3":    $accent3,
+  "accent4":    $accent4
+);
+
+
+@import './../../node_modules/bootstrap/scss/variables';
+@import './../../node_modules/bootstrap/scss/bootstrap';
+@import './sass/base';
+@import './sass/typography'; 
+
+@import './components/layout/index';
+@import './components/siteheader/index';
+@import './components/sitenav/index';
+@import './components/userbanner/index';

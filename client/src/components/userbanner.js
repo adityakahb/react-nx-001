@@ -37,6 +37,9 @@ export default function UserBanner() {
             />
             <div className="userbanner-text-wrap">
               <h1 className="display-1">Abhishek Anand</h1>
+              <button type="button" className="btn btn-primary">
+                Hello
+              </button>
             </div>
           </div>
         </div>

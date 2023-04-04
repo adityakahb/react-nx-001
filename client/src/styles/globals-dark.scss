@@ -1,0 +1,33 @@
+@import './imports';
+
+$primary: #e9ecef;
+$secondary: #6c757d;
+$info: #6db6c4;
+$success: #8dd885;
+$warning: #efad7d;
+$danger: #ea7878;
+$light: #e9ecef;
+$dark: #344767;
+$accent1: $dark;
+
+$theme-colors: (
+  "primary":    $light,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "accent1":    $accent1
+);
+
+@import './../../node_modules/bootstrap/scss/variables';
+@import './../../node_modules/bootstrap/scss/bootstrap';
+@import './sass/base';
+@import './sass/typography'; 
+
+@import './components/layout/index';
+@import './components/siteheader/index';
+@import './components/sitenav/index';
+@import './components/userbanner/index';
