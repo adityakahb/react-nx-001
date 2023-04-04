@@ -9,6 +9,9 @@ $danger: #ea7878;
 $light: #e9ecef;
 $dark: #344767;
 $accent1: $dark;
+$accent2: #af1763;
+$accent3: #fa9f1b;
+$accent4: #f4f5f7;
 
 $theme-colors: (
   "primary":    $light,
@@ -19,7 +22,10 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "accent1":    $accent1
+  "accent1":    $accent1,
+  "accent2":    $accent2,
+  "accent3":    $accent3,
+  "accent4":    $accent4
 );
 
 @import './../../node_modules/bootstrap/scss/variables';
