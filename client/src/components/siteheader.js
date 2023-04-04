@@ -2,7 +2,7 @@ import { NavigationData } from './../contexts/nav-context';
 import { useContext } from 'react';
 import ResponsiveImage from './responsive-image';
 
-export default function Siteheader() {
+export default function Siteheader(isStripped) {
   const { isOpen, setIsOpen } = useContext(NavigationData);
 
   const toggleNavigation = () => {
@@ -44,40 +44,44 @@ export default function Siteheader() {
                   </button>
                 </div>
               </div>
-              <div className="col d-flex justify-content-end">
-                <div className="siteheader-search-toggle d-flex">
-                  <button type="button" className="btn">
-                    <span className="material-symbols-outlined">search</span>
-                  </button>
+              {isStripped ? (
+                <></>
+              ) : (
+                <div className="col d-flex justify-content-end">
+                  <div className="siteheader-search-toggle d-flex">
+                    <button type="button" className="btn">
+                      <span className="material-symbols-outlined">search</span>
+                    </button>
+                  </div>
+                  <div className="siteheader-notif-toggle d-flex">
+                    <button type="button" className="btn position-relative">
+                      <span className="material-symbols-outlined">
+                        notifications
+                      </span>
+                      <span className="position-absolute top-0 start-50 translate-middle p-1 bg-danger border border-light rounded-circle">
+                        <span className="visually-hidden">New alerts</span>
+                      </span>
+                    </button>
+                  </div>
+                  <div className="siteheader-user d-flex">
+                    <button
+                      type="button"
+                      className="btn d-flex justify-content-center align-items-center"
+                    >
+                      <div className="position-relative overflow-hidden rounded-circle">
+                        <ResponsiveImage
+                          className="w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle"
+                          _default={{
+                            '1x': 'https://i.pravatar.cc/100',
+                            '2x': 'https://i.pravatar.cc/200'
+                          }}
+                          alt={'User Image'}
+                        />
+                      </div>
+                    </button>
+                  </div>
                 </div>
-                <div className="siteheader-notif-toggle d-flex">
-                  <button type="button" className="btn position-relative">
-                    <span className="material-symbols-outlined">
-                      notifications
-                    </span>
-                    <span className="position-absolute top-0 start-50 translate-middle p-1 bg-danger border border-light rounded-circle">
-                      <span className="visually-hidden">New alerts</span>
-                    </span>
-                  </button>
-                </div>
-                <div className="siteheader-user d-flex">
-                  <button
-                    type="button"
-                    className="btn d-flex justify-content-center align-items-center"
-                  >
-                    <div className="position-relative overflow-hidden rounded-circle">
-                      <ResponsiveImage
-                        className="w-100 h-100 object-fit-cover position-absolute top-50 start-50 translate-middle"
-                        _default={{
-                          '1x': 'https://i.pravatar.cc/100',
-                          '2x': 'https://i.pravatar.cc/200'
-                        }}
-                        alt={'User Image'}
-                      />
-                    </div>
-                  </button>
-                </div>
-              </div>
+              )}
             </div>
           </div>
         </header>

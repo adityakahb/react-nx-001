@@ -1,0 +1,11 @@
+.applogin {
+  max-width: rem(360px);
+  &-logo {
+    width: rem(100px);
+  }
+  &-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
