@@ -1,17 +1,5 @@
 @import './sass/rem';
 @import './sass/em';
-@import './sass/colors';
-
-$theme-colors: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  "success":    $success,
-  "info":       $info,
-  "warning":    $warning,
-  "danger":     $danger,
-  "light":      $light,
-  "dark":       $dark
-);
 
 $grid-breakpoints: (
   xs: 0,
@@ -70,7 +58,6 @@ $border-radius-xl: 32px;
 $border-radius-xxl: 40px;
 
 @import './../../node_modules/bootstrap/scss/functions';
-@import './../../node_modules/bootstrap/scss/variables';
 @import './../../node_modules/bootstrap/scss/mixins';
 
 @import './sass/mixins';

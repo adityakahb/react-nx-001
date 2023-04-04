@@ -1,8 +1,8 @@
 export default function Sitenav() {
   return (
     <>
-      <nav className="sitenav bg-opacity-75 backdrop-blur" aria-hidden="true">
-        <div className="sitenav-header px-3 py-1 d-xl-none">
+      <nav className="sitenav backdrop-blur" aria-hidden="true">
+        <div className="sitenav-header px-3 d-xxl-none">
           <button type="button" className="btn">
             <span className="material-symbols-outlined">close</span>
           </button>
@@ -13,7 +13,7 @@ export default function Sitenav() {
               href="#"
               className="d-flex px-3 py-1 text-decoration-none align-items-center align-items-center"
             >
-              <span class="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
+              <span className="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
                 empty_dashboard
               </span>
               Dashboard
@@ -24,7 +24,7 @@ export default function Sitenav() {
               href="#"
               className="d-flex px-3 py-1 text-decoration-none align-items-center"
             >
-              <span class="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
+              <span className="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
                 forum
               </span>
               Chat
@@ -35,7 +35,7 @@ export default function Sitenav() {
               href="#"
               className="d-flex px-3 py-1 text-decoration-none align-items-center"
             >
-              <span class="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
+              <span className="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
                 mail
               </span>
               Messages
@@ -46,7 +46,7 @@ export default function Sitenav() {
               href="#"
               className="d-flex px-3 py-1 text-decoration-none align-items-center"
             >
-              <span class="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
+              <span className="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
                 magnification_small
               </span>
               Whiteboard
@@ -57,7 +57,7 @@ export default function Sitenav() {
               href="#"
               className="d-flex px-3 py-1 text-decoration-none align-items-center"
             >
-              <span class="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
+              <span className="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
                 drive_folder_upload
               </span>
               Doc Repository
@@ -68,7 +68,7 @@ export default function Sitenav() {
               href="#"
               className="d-flex px-3 py-1 text-decoration-none align-items-center"
             >
-              <span class="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
+              <span className="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
                 chip_extraction
               </span>
               Extraction
@@ -79,7 +79,7 @@ export default function Sitenav() {
               href="#"
               className="d-flex px-3 py-1 text-decoration-none align-items-center"
             >
-              <span class="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
+              <span className="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
                 calendar_month
               </span>
               Meetings
@@ -90,7 +90,7 @@ export default function Sitenav() {
               href="#"
               className="d-flex px-3 py-1 text-decoration-none align-items-center"
             >
-              <span class="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
+              <span className="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
                 center_focus_strong
               </span>
               View
@@ -101,7 +101,7 @@ export default function Sitenav() {
               href="#"
               className="d-flex px-3 py-1 text-decoration-none align-items-center"
             >
-              <span class="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
+              <span className="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
                 edit_square
               </span>
               Edit
@@ -112,7 +112,7 @@ export default function Sitenav() {
               href="#"
               className="d-flex px-3 py-1 text-decoration-none align-items-center"
             >
-              <span class="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
+              <span className="material-symbols-outlined me-2 d-flex align-items-center justify-content-center">
                 sports_score
               </span>
               MileStones

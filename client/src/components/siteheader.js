@@ -2,7 +2,7 @@ import ResponsiveImage from './responsive-image';
 export default function Siteheader() {
   return (
     <>
-      <section className="siteheader backdrop-blur bg-white bg-opacity-75 fixed-top">
+      <section className="siteheader bg-accent4 backdrop-blur bg-opacity-75 fixed-top">
         <header>
           <div className="container-fluid">
             <div className="row g-0">
@@ -33,8 +33,8 @@ export default function Siteheader() {
                     <span className="material-symbols-outlined">
                       notifications
                     </span>
-                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
-                      <span class="visually-hidden">New alerts</span>
+                    <span className="position-absolute top-0 start-50 translate-middle p-1 bg-danger border border-light rounded-circle">
+                      <span className="visually-hidden">New alerts</span>
                     </span>
                   </button>
                 </div>
